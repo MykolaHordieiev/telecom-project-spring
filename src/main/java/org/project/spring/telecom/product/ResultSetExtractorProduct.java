@@ -1,6 +1,5 @@
 package org.project.spring.telecom.product;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.ResultSetExtractor;
 
