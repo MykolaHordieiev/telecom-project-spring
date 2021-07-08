@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 public class ResultSetExtractorProduct implements ResultSetExtractor<Optional<Product>> {
+
     @Override
     public Optional<Product> extractData(ResultSet resultSet) throws SQLException, DataAccessException {
         if (resultSet.next()) {

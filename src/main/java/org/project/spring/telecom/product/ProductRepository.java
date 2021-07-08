@@ -20,16 +20,15 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class ProductRepository {
 
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
     public List<Product> getAllProducts() {
         String getAllProducts = "SELECT * FROM product ORDER BY id";
         return jdbcTemplate.query(getAllProducts, new ProductRowMapper());
     }
 
-    public Product getProductById(Long id) {
+    public Optional<Product> getProductById(Long id) {
         String query = "SELECT * FROM product WHERE id = " + id;
-        return jdbcTemplate.queryForObject(query, new ProductRowMapper());
+        return jdbcTemplate.query(query, new ResultSetExtractorProduct());
     }
 }

@@ -15,9 +15,8 @@ public class ProductService {
     private final ProductRepository productRepository;
 
     public Product getProductById(Long id) {
-//        return productRepository.getProductById(id).orElseThrow(() -> new ProductException("product with id: "
-//                + id + " doesn't exist"));
-        return productRepository.getProductById(id);
+        return productRepository.getProductById(id).orElseThrow(() -> new ProductException("product with id: "
+                + id + " doesn't exist"));
     }
 
     public List<Product> getAllProduct() {
