@@ -3681,3 +3681,388 @@ Offending resource: org.project.spring.telecom.infra.config.ConfigUserController
 2021-07-08 17:18:19,103 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-5] Completed initialization in 2957 ms
 2021-07-08 17:18:19,527 INFO o.p.s.t.u.UserService [http-nio-8080-exec-5] Try enter user: vasiliy88
 2021-07-08 17:18:19,646 INFO o.p.s.t.u.UserService [http-nio-8080-exec-5] User: vasiliy88 was enter
+2021-07-09 11:23:39,249 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 11:23:39,270 INFO o.p.s.t.i.c.ConfigLoader [main] start load config
+2021-07-09 11:23:39,316 INFO o.p.s.t.i.c.ConfigLoader [main] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 11:23:39,317 INFO o.p.s.t.i.c.ConfigLoader [main] load userName --> root
+2021-07-09 11:23:39,317 INFO o.p.s.t.i.c.ConfigLoader [main] load userPassword --> 380500850614Lucky
+2021-07-09 11:23:39,529 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 11:23:39,536 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-09 11:23:39,538 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 11:24:00,803 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-09 11:24:01,869 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-09 11:24:02,392 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-09 11:24:02,395 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-09 11:24:02,398 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-09 11:24:03,612 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-09 11:24:03,613 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-09 11:24:03,616 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-09 11:24:03,616 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-09 11:24:03,629 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-09 11:24:42,494 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-09 11:26:35,780 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2021-07-09 11:26:35,783 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2021-07-09 11:26:35,783 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2021-07-09 11:27:06,808 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-6] Initializing Servlet 'front'
+2021-07-09 11:27:09,145 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-6] Start config DataSource
+2021-07-09 11:27:09,145 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-6] start load config
+2021-07-09 11:27:09,148 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-6] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 11:27:09,148 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-6] load userName --> root
+2021-07-09 11:27:09,148 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-6] load userPassword --> 380500850614Lucky
+2021-07-09 11:27:09,148 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-6] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 11:27:09,149 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-6] Set userName --> root
+2021-07-09 11:27:09,149 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-6] Set userPassword --> 380500850614Lucky
+2021-07-09 11:27:09,470 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-6] Start configure server
+2021-07-09 11:27:09,476 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-6] Set context path --> /telecom
+2021-07-09 11:27:09,476 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-6] Add servlet: servlet name --> front
+2021-07-09 11:27:09,477 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-6] Add servlet mapping: url --> /service/*
+2021-07-09 11:27:09,477 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-6] Start configure security
+2021-07-09 11:27:09,477 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-6] Add filter --> AuthorizationFilter
+2021-07-09 11:27:09,478 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-6] Start configure encoding filter
+2021-07-09 11:27:09,478 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-6] Add filter --> EncodingFilter
+2021-07-09 11:27:09,479 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-6] Start configure session listener
+2021-07-09 11:27:09,479 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-6] Set session listeners 
+2021-07-09 11:27:10,789 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-6] Completed initialization in 3980 ms
+2021-07-09 11:27:11,213 INFO o.p.s.t.u.UserService [http-nio-8080-exec-6] Try enter user: admin
+2021-07-09 11:27:11,502 INFO o.p.s.t.u.UserService [http-nio-8080-exec-6] User: admin was enter
+2021-07-09 11:27:56,345 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-4] Request: http://localhost:8080/telecom/service/subscriber raised org.project.spring.telecom.subscriber.SubscriberException: Password must contain at least: 1 lowercase alphabetical character; 1 uppercase alphabetical character; 1 numeric character; 1 special characterPassword length must be min 8.
+2021-07-09 11:28:35,364 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-8] Request: http://localhost:8080/telecom/service/subscriber raised java.lang.NullPointerException
+2021-07-09 11:50:01,066 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 11:50:01,082 INFO o.p.s.t.i.c.ConfigLoader [main] start load config
+2021-07-09 11:50:01,097 INFO o.p.s.t.i.c.ConfigLoader [main] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 11:50:01,097 INFO o.p.s.t.i.c.ConfigLoader [main] load userName --> root
+2021-07-09 11:50:01,097 INFO o.p.s.t.i.c.ConfigLoader [main] load userPassword --> 380500850614Lucky
+2021-07-09 11:50:01,166 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 11:50:01,166 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-09 11:50:01,166 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 11:50:11,066 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-09 11:50:13,799 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-09 11:50:14,143 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-09 11:50:14,143 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-09 11:50:14,143 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-09 11:50:14,721 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-09 11:50:14,721 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-09 11:50:14,736 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-09 11:50:14,736 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-09 11:50:14,736 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-09 11:50:29,610 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-09 11:52:51,557 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2021-07-09 11:52:51,560 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2021-07-09 11:52:51,561 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2021-07-09 11:52:56,851 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-5] Initializing Servlet 'front'
+2021-07-09 11:52:58,276 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Start config DataSource
+2021-07-09 11:52:58,276 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] start load config
+2021-07-09 11:52:58,282 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 11:52:58,283 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] load userName --> root
+2021-07-09 11:52:58,283 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] load userPassword --> 380500850614Lucky
+2021-07-09 11:52:58,283 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 11:52:58,284 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Set userName --> root
+2021-07-09 11:52:58,284 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Set userPassword --> 380500850614Lucky
+2021-07-09 11:52:58,814 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure server
+2021-07-09 11:52:58,820 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Set context path --> /telecom
+2021-07-09 11:52:58,820 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add servlet: servlet name --> front
+2021-07-09 11:52:58,821 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add servlet mapping: url --> /service/*
+2021-07-09 11:52:58,821 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure security
+2021-07-09 11:52:58,822 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add filter --> AuthorizationFilter
+2021-07-09 11:52:58,825 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure encoding filter
+2021-07-09 11:52:58,825 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add filter --> EncodingFilter
+2021-07-09 11:52:58,825 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure session listener
+2021-07-09 11:52:58,826 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Set session listeners 
+2021-07-09 11:52:59,985 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-5] Completed initialization in 3133 ms
+2021-07-09 11:53:00,435 INFO o.p.s.t.u.UserService [http-nio-8080-exec-5] Try enter user: admin
+2021-07-09 11:53:00,557 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-5] Request: http://localhost:8080/telecom/service/login raised org.project.spring.telecom.user.UserLoginException: password no match
+2021-07-09 11:53:06,572 INFO o.p.s.t.u.UserService [http-nio-8080-exec-7] Try enter user: admin
+2021-07-09 11:53:06,580 INFO o.p.s.t.u.UserService [http-nio-8080-exec-7] User: admin was enter
+2021-07-09 11:53:22,198 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-2] Request: http://localhost:8080/telecom/service/subscriber raised org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 1
+2021-07-09 12:08:28,009 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 12:08:28,009 INFO o.p.s.t.i.c.ConfigLoader [main] start load config
+2021-07-09 12:08:28,025 INFO o.p.s.t.i.c.ConfigLoader [main] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:08:28,025 INFO o.p.s.t.i.c.ConfigLoader [main] load userName --> root
+2021-07-09 12:08:28,040 INFO o.p.s.t.i.c.ConfigLoader [main] load userPassword --> 380500850614Lucky
+2021-07-09 12:08:28,072 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:08:28,072 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-09 12:08:28,072 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 12:08:34,410 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-09 12:08:35,412 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-09 12:08:35,505 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-09 12:08:35,505 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-09 12:08:35,505 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-09 12:08:35,880 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-09 12:08:35,880 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-09 12:08:35,880 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-09 12:08:35,880 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-09 12:08:35,896 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-09 12:08:51,292 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-09 12:09:38,722 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Session created
+2021-07-09 12:09:38,724 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session locales --> [en, ru]
+2021-07-09 12:09:38,725 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session selected locale --> en
+2021-07-09 12:09:43,431 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-7] Initializing Servlet 'front'
+2021-07-09 12:09:44,743 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-7] Start config DataSource
+2021-07-09 12:09:44,743 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-7] start load config
+2021-07-09 12:09:44,756 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-7] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:09:44,756 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-7] load userName --> root
+2021-07-09 12:09:44,756 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-7] load userPassword --> 380500850614Lucky
+2021-07-09 12:09:44,757 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-7] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:09:44,757 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-7] Set userName --> root
+2021-07-09 12:09:44,758 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-7] Set userPassword --> 380500850614Lucky
+2021-07-09 12:09:45,299 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-7] Start configure server
+2021-07-09 12:09:45,317 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Set context path --> /telecom
+2021-07-09 12:09:45,318 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Add servlet: servlet name --> front
+2021-07-09 12:09:45,319 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Add servlet mapping: url --> /service/*
+2021-07-09 12:09:45,320 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-7] Start configure security
+2021-07-09 12:09:45,320 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Add filter --> AuthorizationFilter
+2021-07-09 12:09:45,323 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-7] Start configure encoding filter
+2021-07-09 12:09:45,324 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Add filter --> EncodingFilter
+2021-07-09 12:09:45,324 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-7] Start configure session listener
+2021-07-09 12:09:45,324 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Set session listeners 
+2021-07-09 12:09:47,352 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-7] Completed initialization in 3920 ms
+2021-07-09 12:09:47,772 INFO o.p.s.t.u.UserService [http-nio-8080-exec-7] Try enter user: admin
+2021-07-09 12:09:47,875 INFO o.p.s.t.u.UserService [http-nio-8080-exec-7] User: admin was enter
+2021-07-09 12:10:03,620 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-3] Request: http://localhost:8080/telecom/service/subscriber raised org.springframework.dao.DuplicateKeyException: PreparedStatementCallback; Duplicate entry 'gordeev_19@mail.ru' for key 'user.login'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'gordeev_19@mail.ru' for key 'user.login'
+2021-07-09 12:10:56,711 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-9] Request: http://localhost:8080/telecom/service/subscriber raised org.springframework.dao.TransientDataAccessResourceException: PreparedStatementCallback; Generated keys not requested. You need to specify Statement.RETURN_GENERATED_KEYS to Statement.executeUpdate(), Statement.executeLargeUpdate() or Connection.prepareStatement().; nested exception is java.sql.SQLException: Generated keys not requested. You need to specify Statement.RETURN_GENERATED_KEYS to Statement.executeUpdate(), Statement.executeLargeUpdate() or Connection.prepareStatement().
+2021-07-09 12:14:05,559 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 12:14:05,568 INFO o.p.s.t.i.c.ConfigLoader [main] start load config
+2021-07-09 12:14:05,590 INFO o.p.s.t.i.c.ConfigLoader [main] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:14:05,590 INFO o.p.s.t.i.c.ConfigLoader [main] load userName --> root
+2021-07-09 12:14:05,591 INFO o.p.s.t.i.c.ConfigLoader [main] load userPassword --> 380500850614Lucky
+2021-07-09 12:14:05,668 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:14:05,669 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-09 12:14:05,670 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 12:14:18,565 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-09 12:14:19,706 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-09 12:14:19,879 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-09 12:14:19,879 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-09 12:14:19,879 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-09 12:14:21,029 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-09 12:14:21,029 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-09 12:14:21,029 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-09 12:14:21,029 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-09 12:14:21,045 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-09 12:14:55,658 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-09 12:18:41,894 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2021-07-09 12:18:41,896 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2021-07-09 12:18:41,896 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2021-07-09 12:18:57,327 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-5] Initializing Servlet 'front'
+2021-07-09 12:19:00,194 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Start config DataSource
+2021-07-09 12:19:00,195 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] start load config
+2021-07-09 12:19:00,212 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:19:00,212 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] load userName --> root
+2021-07-09 12:19:00,212 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] load userPassword --> 380500850614Lucky
+2021-07-09 12:19:00,213 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:19:00,213 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Set userName --> root
+2021-07-09 12:19:00,214 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Set userPassword --> 380500850614Lucky
+2021-07-09 12:19:00,665 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure server
+2021-07-09 12:19:00,672 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Set context path --> /telecom
+2021-07-09 12:19:00,673 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add servlet: servlet name --> front
+2021-07-09 12:19:00,674 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add servlet mapping: url --> /service/*
+2021-07-09 12:19:00,674 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure security
+2021-07-09 12:19:00,675 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add filter --> AuthorizationFilter
+2021-07-09 12:19:00,677 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure encoding filter
+2021-07-09 12:19:00,679 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add filter --> EncodingFilter
+2021-07-09 12:19:00,679 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure session listener
+2021-07-09 12:19:00,680 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Set session listeners 
+2021-07-09 12:19:01,942 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-5] Completed initialization in 4614 ms
+2021-07-09 12:19:02,354 INFO o.p.s.t.u.UserService [http-nio-8080-exec-5] Try enter user: admin
+2021-07-09 12:19:02,476 INFO o.p.s.t.u.UserService [http-nio-8080-exec-5] User: admin was enter
+2021-07-09 12:19:28,129 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-3] Request: http://localhost:8080/telecom/service/subscriber raised org.project.spring.telecom.subscriber.SubscriberException: Password must contain at least: 1 lowercase alphabetical character; 1 uppercase alphabetical character; 1 numeric character; 1 special characterPassword length must be min 8.
+2021-07-09 12:19:41,654 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-8] Request: http://localhost:8080/telecom/service/subscriber raised org.springframework.dao.DuplicateKeyException: PreparedStatementCallback; Duplicate entry 'gordeev_19@mail.ru' for key 'user.login'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'gordeev_19@mail.ru' for key 'user.login'
+2021-07-09 12:20:13,949 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-2] Request: http://localhost:8080/telecom/service/subscriber raised org.springframework.dao.DuplicateKeyException: PreparedStatementCallback; Duplicate entry 'pupkin1212' for key 'user.login'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'pupkin1212' for key 'user.login'
+2021-07-09 12:20:38,916 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-8] Request: http://localhost:8080/telecom/service/subscriber raised java.lang.ClassCastException: java.math.BigInteger cannot be cast to java.lang.Long
+2021-07-09 12:26:51,696 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 12:26:51,696 INFO o.p.s.t.i.c.ConfigLoader [main] start load config
+2021-07-09 12:26:51,727 INFO o.p.s.t.i.c.ConfigLoader [main] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:26:51,727 INFO o.p.s.t.i.c.ConfigLoader [main] load userName --> root
+2021-07-09 12:26:51,727 INFO o.p.s.t.i.c.ConfigLoader [main] load userPassword --> 380500850614Lucky
+2021-07-09 12:26:51,759 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:26:51,759 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-09 12:26:51,759 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 12:27:03,658 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-09 12:27:04,908 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-09 12:27:05,749 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-09 12:27:05,751 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-09 12:27:05,751 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-09 12:27:06,614 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-09 12:27:06,615 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-09 12:27:06,629 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-09 12:27:06,633 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-09 12:27:06,639 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-09 12:27:41,003 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-09 12:30:57,681 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Session created
+2021-07-09 12:30:57,684 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session locales --> [en, ru]
+2021-07-09 12:30:57,684 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session selected locale --> en
+2021-07-09 12:31:06,009 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-5] Initializing Servlet 'front'
+2021-07-09 12:31:08,249 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Start config DataSource
+2021-07-09 12:31:08,249 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] start load config
+2021-07-09 12:31:08,253 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:31:08,254 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] load userName --> root
+2021-07-09 12:31:08,254 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-5] load userPassword --> 380500850614Lucky
+2021-07-09 12:31:08,254 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:31:08,255 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Set userName --> root
+2021-07-09 12:31:08,255 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-5] Set userPassword --> 380500850614Lucky
+2021-07-09 12:31:09,047 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure server
+2021-07-09 12:31:09,053 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Set context path --> /telecom
+2021-07-09 12:31:09,053 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add servlet: servlet name --> front
+2021-07-09 12:31:09,054 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add servlet mapping: url --> /service/*
+2021-07-09 12:31:09,054 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure security
+2021-07-09 12:31:09,054 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add filter --> AuthorizationFilter
+2021-07-09 12:31:09,055 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure encoding filter
+2021-07-09 12:31:09,056 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Add filter --> EncodingFilter
+2021-07-09 12:31:09,056 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-5] Start configure session listener
+2021-07-09 12:31:09,056 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-5] Set session listeners 
+2021-07-09 12:31:10,317 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-5] Completed initialization in 4308 ms
+2021-07-09 12:31:10,738 INFO o.p.s.t.u.UserService [http-nio-8080-exec-5] Try enter user: admin
+2021-07-09 12:31:10,812 INFO o.p.s.t.u.UserService [http-nio-8080-exec-5] User: admin was enter
+2021-07-09 12:31:24,167 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-1] Request: http://localhost:8080/telecom/service/subscriber raised java.lang.ClassCastException: java.math.BigInteger cannot be cast to java.lang.Long
+2021-07-09 12:39:23,081 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 12:39:23,158 INFO o.p.s.t.i.c.ConfigLoader [main] start load config
+2021-07-09 12:39:23,179 INFO o.p.s.t.i.c.ConfigLoader [main] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:39:23,179 INFO o.p.s.t.i.c.ConfigLoader [main] load userName --> root
+2021-07-09 12:39:23,180 INFO o.p.s.t.i.c.ConfigLoader [main] load userPassword --> 380500850614Lucky
+2021-07-09 12:39:23,400 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:39:23,401 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-09 12:39:23,401 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 12:39:45,530 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-09 12:39:47,054 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-09 12:39:47,557 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-09 12:39:47,558 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-09 12:39:47,558 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-09 12:39:48,536 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-09 12:39:48,536 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-09 12:39:48,540 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-09 12:39:48,540 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-09 12:39:48,545 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-09 12:40:22,028 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-09 12:42:08,639 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Session created
+2021-07-09 12:42:08,647 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session locales --> [en, ru]
+2021-07-09 12:42:08,648 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session selected locale --> en
+2021-07-09 12:42:17,616 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-4] Initializing Servlet 'front'
+2021-07-09 12:42:19,273 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-4] Start config DataSource
+2021-07-09 12:42:19,273 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-4] start load config
+2021-07-09 12:42:19,280 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-4] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:42:19,281 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-4] load userName --> root
+2021-07-09 12:42:19,281 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-4] load userPassword --> 380500850614Lucky
+2021-07-09 12:42:19,281 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-4] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:42:19,281 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-4] Set userName --> root
+2021-07-09 12:42:19,282 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-4] Set userPassword --> 380500850614Lucky
+2021-07-09 12:42:20,304 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-4] Start configure server
+2021-07-09 12:42:20,310 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Set context path --> /telecom
+2021-07-09 12:42:20,311 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Add servlet: servlet name --> front
+2021-07-09 12:42:20,311 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Add servlet mapping: url --> /service/*
+2021-07-09 12:42:20,312 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-4] Start configure security
+2021-07-09 12:42:20,312 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Add filter --> AuthorizationFilter
+2021-07-09 12:42:20,313 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-4] Start configure encoding filter
+2021-07-09 12:42:20,315 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Add filter --> EncodingFilter
+2021-07-09 12:42:20,316 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-4] Start configure session listener
+2021-07-09 12:42:20,317 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Set session listeners 
+2021-07-09 12:42:21,650 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-4] Completed initialization in 4034 ms
+2021-07-09 12:42:22,102 INFO o.p.s.t.u.UserService [http-nio-8080-exec-4] Try enter user: admin
+2021-07-09 12:42:22,176 INFO o.p.s.t.u.UserService [http-nio-8080-exec-4] User: admin was enter
+2021-07-09 12:44:05,254 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-4] session destroyed
+2021-07-09 12:44:05,311 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-6] Session created
+2021-07-09 12:44:05,311 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-6] Set session locales --> [en, ru]
+2021-07-09 12:44:05,312 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-6] Set session selected locale --> en
+2021-07-09 12:44:13,371 INFO o.p.s.t.u.UserService [http-nio-8080-exec-8] Try enter user: gordeev_19@mail.ru
+2021-07-09 12:44:13,377 INFO o.p.s.t.u.UserService [http-nio-8080-exec-8] User: gordeev_19@mail.ru was enter
+2021-07-09 12:44:43,697 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-10] Request: http://localhost:8080/telecom/service/subscriber/balance raised org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [UPDATE subscriber SET balance=? WHERE id=11]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? WHERE id=11' at line 1
+2021-07-09 12:46:51,192 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 12:46:51,199 INFO o.p.s.t.i.c.ConfigLoader [main] start load config
+2021-07-09 12:46:51,219 INFO o.p.s.t.i.c.ConfigLoader [main] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:46:51,220 INFO o.p.s.t.i.c.ConfigLoader [main] load userName --> root
+2021-07-09 12:46:51,220 INFO o.p.s.t.i.c.ConfigLoader [main] load userPassword --> 380500850614Lucky
+2021-07-09 12:46:51,273 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:46:51,274 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-09 12:46:51,274 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 12:46:58,020 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-09 12:46:58,424 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-09 12:46:58,514 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-09 12:46:58,515 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-09 12:46:58,515 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-09 12:46:58,708 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-09 12:46:58,709 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-09 12:46:58,713 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-09 12:46:58,713 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-09 12:46:58,718 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-09 12:47:13,055 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-09 12:48:10,253 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2021-07-09 12:48:10,255 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2021-07-09 12:48:10,255 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2021-07-09 12:48:19,773 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-4] Initializing Servlet 'front'
+2021-07-09 12:48:21,152 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-4] Start config DataSource
+2021-07-09 12:48:21,152 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-4] start load config
+2021-07-09 12:48:21,163 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-4] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:48:21,164 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-4] load userName --> root
+2021-07-09 12:48:21,164 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-4] load userPassword --> 380500850614Lucky
+2021-07-09 12:48:21,164 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-4] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 12:48:21,164 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-4] Set userName --> root
+2021-07-09 12:48:21,164 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-4] Set userPassword --> 380500850614Lucky
+2021-07-09 12:48:21,557 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-4] Start configure server
+2021-07-09 12:48:21,573 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Set context path --> /telecom
+2021-07-09 12:48:21,576 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Add servlet: servlet name --> front
+2021-07-09 12:48:21,581 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Add servlet mapping: url --> /service/*
+2021-07-09 12:48:21,582 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-4] Start configure security
+2021-07-09 12:48:21,583 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Add filter --> AuthorizationFilter
+2021-07-09 12:48:21,586 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-4] Start configure encoding filter
+2021-07-09 12:48:21,587 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Add filter --> EncodingFilter
+2021-07-09 12:48:21,587 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-4] Start configure session listener
+2021-07-09 12:48:21,588 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-4] Set session listeners 
+2021-07-09 12:48:23,024 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-4] Completed initialization in 3249 ms
+2021-07-09 12:48:23,576 INFO o.p.s.t.u.UserService [http-nio-8080-exec-4] Try enter user: gordeev_19@mail.ru
+2021-07-09 12:48:23,699 INFO o.p.s.t.u.UserService [http-nio-8080-exec-4] User: gordeev_19@mail.ru was enter
+2021-07-09 12:48:46,566 INFO o.p.s.t.u.UserService [http-nio-8080-exec-1] Try enter user: admin
+2021-07-09 12:48:46,572 INFO o.p.s.t.u.UserService [http-nio-8080-exec-1] User: admin was enter
+2021-07-09 12:48:58,369 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] session destroyed
+2021-07-09 12:48:58,427 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Session created
+2021-07-09 12:48:58,427 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session locales --> [en, ru]
+2021-07-09 12:48:58,428 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session selected locale --> en
+2021-07-09 12:49:04,496 INFO o.p.s.t.u.UserService [http-nio-8080-exec-8] Try enter user: gordeev_19@mail.ru
+2021-07-09 12:49:04,502 INFO o.p.s.t.u.UserService [http-nio-8080-exec-8] User: gordeev_19@mail.ru was enter
+2021-07-09 13:36:20,715 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 13:36:20,738 INFO o.p.s.t.i.c.ConfigLoader [main] start load config
+2021-07-09 13:36:20,741 INFO o.p.s.t.i.c.ConfigLoader [main] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 13:36:20,742 INFO o.p.s.t.i.c.ConfigLoader [main] load userName --> root
+2021-07-09 13:36:20,760 INFO o.p.s.t.i.c.ConfigLoader [main] load userPassword --> 380500850614Lucky
+2021-07-09 13:36:20,846 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 13:36:20,849 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-09 13:36:20,851 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 13:36:29,460 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-09 13:36:30,912 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-09 13:36:31,434 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-09 13:36:31,435 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-09 13:36:31,436 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-09 13:36:32,022 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-09 13:36:32,022 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-09 13:36:32,025 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-09 13:36:32,026 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-09 13:36:32,030 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-09 13:36:47,470 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-09 13:38:49,839 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'front'
+2021-07-09 13:38:51,632 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-1] Start config DataSource
+2021-07-09 13:38:51,632 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-1] start load config
+2021-07-09 13:38:51,636 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-1] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 13:38:51,636 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-1] load userName --> root
+2021-07-09 13:38:51,637 INFO o.p.s.t.i.c.ConfigLoader [http-nio-8080-exec-1] load userPassword --> 380500850614Lucky
+2021-07-09 13:38:51,637 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-1] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 13:38:51,637 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-1] Set userName --> root
+2021-07-09 13:38:51,637 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-1] Set userPassword --> 380500850614Lucky
+2021-07-09 13:38:52,070 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-1] Start configure server
+2021-07-09 13:38:52,110 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Set context path --> /telecom
+2021-07-09 13:38:52,111 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Add servlet: servlet name --> front
+2021-07-09 13:38:52,112 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Add servlet mapping: url --> /service/*
+2021-07-09 13:38:52,112 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-1] Start configure security
+2021-07-09 13:38:52,112 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Add filter --> AuthorizationFilter
+2021-07-09 13:38:52,113 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-1] Start configure encoding filter
+2021-07-09 13:38:52,113 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Add filter --> EncodingFilter
+2021-07-09 13:38:52,114 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-1] Start configure session listener
+2021-07-09 13:38:52,114 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Set session listeners 
+2021-07-09 13:38:53,681 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3841 ms
+2021-07-09 13:38:54,221 INFO o.p.s.t.u.UserService [http-nio-8080-exec-1] Try enter user: admin
+2021-07-09 13:38:54,320 INFO o.p.s.t.u.UserService [http-nio-8080-exec-1] User: admin was enter
+2021-07-09 13:38:54,353 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2021-07-09 13:38:54,355 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2021-07-09 13:38:54,355 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2021-07-09 13:40:34,694 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-7] session destroyed
+2021-07-09 13:40:34,770 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-9] Session created
+2021-07-09 13:40:34,771 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-9] Set session locales --> [en, ru]
+2021-07-09 13:40:34,771 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-9] Set session selected locale --> en
+2021-07-09 13:40:44,766 INFO o.p.s.t.u.UserService [http-nio-8080-exec-1] Try enter user: vasiliy88
+2021-07-09 13:40:44,772 INFO o.p.s.t.u.UserService [http-nio-8080-exec-1] User: vasiliy88 was enter

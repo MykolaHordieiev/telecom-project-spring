@@ -5,6 +5,7 @@ import org.project.spring.telecom.subscriber.dto.SubscriberCreateDTO;
 import org.project.spring.telecom.subscriber.dto.SubscriberReplenishDTO;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -16,6 +17,7 @@ public class SubscriberService {
     private final SubscriberRepository subscriberRepository;
     private final SubscriberMapper subscriberMapper;
 
+    @Transactional
     public Subscriber create(SubscriberCreateDTO subscriberCreateDTO) {
         SubscriberCreateDTO dto = subscriberRepository.insertSubscriber(subscriberCreateDTO);
         return subscriberMapper.getSubscriberFromCreateDTO(dto);
@@ -36,11 +38,11 @@ public class SubscriberService {
         return Math.ceil(countOfRows / 5);
     }
 
-    public Subscriber lockSubscriberById(Long id) {
+    public int lockSubscriberById(Long id) {
         return subscriberRepository.lockSubById(id);
     }
 
-    public Subscriber unlockSubscriberById(Long id) {
+    public int unlockSubscriberById(Long id) {
         return subscriberRepository.unlockSubById(id);
     }
 
@@ -51,8 +53,8 @@ public class SubscriberService {
         subscriberRepository.replenishBalanceById(replenishDTO);
         Subscriber subscriberAfterReplenish = subscriberMapper.getSubscriberFromReplenishDTO(replenishDTO);
         if (balanceBefore < 0 && replenishDTO.getBalance() >= 0) {
-            Subscriber unlockSubById = subscriberRepository.unlockSubById(subscriberAfterReplenish.getId());
-            subscriberAfterReplenish.setLock(unlockSubById.isLock());
+            subscriberRepository.unlockSubById(subscriberAfterReplenish.getId());
+            subscriberAfterReplenish.setLock(false);
             subscriberAfterReplenish.setLogin(subscriberBeforeReplenish.getLogin());
         }
         return subscriberAfterReplenish;
@@ -67,7 +69,5 @@ public class SubscriberService {
     public Subscriber getSubscriberByLogin(String login) {
         return subscriberRepository.getByLogin(login).orElseThrow(
                 () -> new SubscriberException("Subscriber with login: " + login + " not found"));
-
     }
-
 }
