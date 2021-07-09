@@ -54,7 +54,7 @@ public class SubscriberController {
     @PostMapping("/subscriber")
     public RedirectView createSubscriber(HttpServletRequest request, RedirectAttributes attributes) {
         SubscriberCreateDTO dto = queryValueResolver.getObject(request, SubscriberCreateDTO.class);
-        validator.checkValidLoginPassword(dto);
+        //validator.checkValidLoginPassword(dto);
         Subscriber createdSubscriber = subscriberService.create(dto);
         attributes.addAttribute("id", createdSubscriber.getId());
         return new RedirectView("/telecom/service/subscriber");

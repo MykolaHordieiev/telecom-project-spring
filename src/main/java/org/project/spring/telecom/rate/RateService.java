@@ -25,8 +25,8 @@ public class RateService {
     }
 
     public Rate getRateById(Long id) {
-        return rateRepository.getRateById(id).orElseThrow(() -> new RateException("rate by id: " +
-                id + " not found"));
+        return rateRepository.getRateById(id)
+                .orElseThrow(() -> new RateException("rate by id: " + id + " not found"));
     }
 
     public RateChangeRequestDTO changeRateById(RateChangeRequestDTO rateDTO) {

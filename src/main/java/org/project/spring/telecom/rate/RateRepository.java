@@ -21,6 +21,7 @@ import java.util.Optional;
 public class RateRepository {
 
     private final JdbcTemplate jdbcTemplate;
+    private final RateResultSetExtractor rateResultSetExtractor;
 
     public List<Rate> getRatesByProduct(Long productId) {
         String query = "SELECT * FROM rate WHERE product_id=" + productId;
@@ -34,7 +35,7 @@ public class RateRepository {
 
     public Optional<Rate> getRateById(Long id) {
         String query = "SELECT * FROM rate WHERE id=" + id;
-        return jdbcTemplate.query(query, new RateResultSetExtractor());
+        return jdbcTemplate.query(query, rateResultSetExtractor);
     }
 
     public RateChangeRequestDTO changeRateById(RateChangeRequestDTO rateDTO) {

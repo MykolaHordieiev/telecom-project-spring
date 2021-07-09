@@ -21,7 +21,6 @@ import java.util.List;
 import java.util.Locale;
 
 @Configuration
-@RequiredArgsConstructor
 public class ServerStarterConfig {
 
     private static Logger logger = LogManager.getLogger(ServerStarterConfig.class);

@@ -8,12 +8,12 @@ import org.springframework.jdbc.core.*;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.*;
 import java.util.*;
 
 @Component
-@Log4j2
 @RequiredArgsConstructor
 public class SubscriberRepository {
 

@@ -24,8 +24,8 @@ public class SubscriberService {
     }
 
     public Subscriber getSubscriberById(Long id) {
-        return subscriberRepository.getById(id).orElseThrow(() -> new SubscriberException("subscriber with id: "
-                + id + " doesn't exist"));
+        return subscriberRepository.getById(id)
+                .orElseThrow(() -> new SubscriberException("subscriber with id: " + id + " doesn't exist"));
     }
 
     public List<Subscriber> getAll(int page) {
@@ -67,7 +67,7 @@ public class SubscriberService {
     }
 
     public Subscriber getSubscriberByLogin(String login) {
-        return subscriberRepository.getByLogin(login).orElseThrow(
-                () -> new SubscriberException("Subscriber with login: " + login + " not found"));
+        return subscriberRepository.getByLogin(login)
+                .orElseThrow(() -> new SubscriberException("Subscriber with login: " + login + " not found"));
     }
 }

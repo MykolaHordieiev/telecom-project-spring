@@ -12,6 +12,7 @@ import org.project.spring.telecom.subscriber.SubscriberService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -76,8 +77,7 @@ public class RateController {
     }
 
     @GetMapping("/rate/info")
-    public ModelAndView getRateById(HttpServletRequest request, ModelMap model) {
-        long id = parseLong(request.getParameter("rateId"));
+    public ModelAndView getRateById(@PathVariable("rateId") Long id) {
         Rate rate = rateService.getRateById(id);
         ModelAndView modelAndView = new ModelAndView("/rate/byid.jsp");
         modelAndView.addObject("rate", rate);

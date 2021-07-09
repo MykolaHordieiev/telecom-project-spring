@@ -1,0 +1,12 @@
+services:
+  mariaDB:
+    image: mariadb
+    restart: always
+    container_name: telecom-maria-db
+    hostname: mariaserver
+    ports:
+      - 5000:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MARIA_USER=root
+      - MARIA_USER_PASSWORD=root
