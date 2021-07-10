@@ -1,6 +1,5 @@
 package org.project.spring.telecom.infra.config;
 
-import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,10 +9,8 @@ import org.project.spring.telecom.infra.auth.AuthorizationFilter;
 import org.project.spring.telecom.infra.encoding.EncodingFilter;
 import org.project.spring.telecom.infra.web.LocaleSessionListener;
 import org.project.spring.telecom.infra.web.ServerStarter;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,7 +18,6 @@ import java.util.List;
 import java.util.Locale;
 
 @Configuration
-@RequiredArgsConstructor
 public class ServerStarterConfig {
 
     private static Logger logger = LogManager.getLogger(ServerStarterConfig.class);

@@ -1,6 +1,5 @@
-package org.project.spring.telecom.infra.config;
+package org.project.spring.telecom.user;
 
-import org.project.spring.telecom.user.UserRole;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

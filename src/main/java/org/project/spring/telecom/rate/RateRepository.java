@@ -21,20 +21,23 @@ import java.util.Optional;
 public class RateRepository {
 
     private final JdbcTemplate jdbcTemplate;
+    private final RateResultSetExtractor rateResultSetExtractor;
+    private final RateRowMapper rateRowMapper;
+    private final SubscriberRowMapper subscriberRowMapper;
 
     public List<Rate> getRatesByProduct(Long productId) {
         String query = "SELECT * FROM rate WHERE product_id=" + productId;
-        return jdbcTemplate.query(query, new RateRowMapper());
+        return jdbcTemplate.query(query, rateRowMapper);
     }
 
     public List<Rate> getRatesBySubscriberId(Long subscriberId) {
         String query = "SELECT * FROM rate JOIN subscribing ON subscribing.rate_id=rate.id WHERE subscriber_id =" + subscriberId;
-        return jdbcTemplate.query(query, new RateRowMapper());
+        return jdbcTemplate.query(query, rateRowMapper);
     }
 
     public Optional<Rate> getRateById(Long id) {
         String query = "SELECT * FROM rate WHERE id=" + id;
-        return jdbcTemplate.query(query, new RateResultSetExtractor());
+        return jdbcTemplate.query(query, rateResultSetExtractor);
     }
 
     public RateChangeRequestDTO changeRateById(RateChangeRequestDTO rateDTO) {
@@ -72,7 +75,7 @@ public class RateRepository {
                 "JOIN user ON subscribing.subscriber_id=user.id " +
                 "JOIN subscriber ON subscribing.subscriber_id=subscriber.id " +
                 "WHERE rate_id=" + id;
-        return jdbcTemplate.query(query, new SubscriberRowMapper());
+        return jdbcTemplate.query(query, subscriberRowMapper);
     }
 
     public Rate doUnusableRateByRateId(Rate rate) {

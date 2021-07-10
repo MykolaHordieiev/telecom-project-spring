@@ -1968,11 +1968,11 @@ org.project.spring.telecom.user.UserController#login(HttpServletRequest, HttpSer
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.8.jar:5.3.8]
 	... 45 more
 2021-07-06 14:02:41,627 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'getViewMap' must not be private or final; change the method's modifiers to continue
-Offending resource: org.project.spring.telecom.infra.config.ConfigUserController
+Offending resource: org.project.spring.telecom.user.ConfigUserController
 2021-07-06 14:03:10,853 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'getViewMap' must not be private or final; change the method's modifiers to continue
-Offending resource: org.project.spring.telecom.infra.config.ConfigUserController
+Offending resource: org.project.spring.telecom.user.ConfigUserController
 2021-07-06 14:04:31,700 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'getViewMap' must not be private or final; change the method's modifiers to continue
-Offending resource: org.project.spring.telecom.infra.config.ConfigUserController
+Offending resource: org.project.spring.telecom.user.ConfigUserController
 2021-07-06 14:05:24,562 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
 2021-07-06 14:05:24,570 INFO o.p.s.t.i.c.ConfigLoader [main] start load config
 2021-07-06 14:05:24,573 INFO o.p.s.t.i.c.ConfigLoader [main] load jdbcURL --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
@@ -4066,3 +4066,130 @@ Offending resource: org.project.spring.telecom.infra.config.ConfigUserController
 2021-07-09 13:40:34,771 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-9] Set session selected locale --> en
 2021-07-09 13:40:44,766 INFO o.p.s.t.u.UserService [http-nio-8080-exec-1] Try enter user: vasiliy88
 2021-07-09 13:40:44,772 INFO o.p.s.t.u.UserService [http-nio-8080-exec-1] User: vasiliy88 was enter
+2021-07-09 20:21:14,437 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [org.project.spring.telecom.Application]; nested exception is java.io.FileNotFoundException: class path resource [classpath.db/db.properties] cannot be opened because it does not exist
+2021-07-09 20:22:17,461 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [org.project.spring.telecom.Application]; nested exception is java.io.FileNotFoundException: class path resource [ db/db.properties] cannot be opened because it does not exist
+2021-07-09 20:30:58,320 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 20:30:58,382 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 20:30:58,382 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> Николай
+2021-07-09 20:30:58,382 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 20:31:05,385 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'liquibaseStarter' defined in file [C:\Users\Николай\IdeaProjects\telecom-project-spring\target\classes\org\project\spring\telecom\infra\db\LiquibaseStarter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/project/spring/telecom/infra/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'Ð�Ð¸ÐºÐ¾Ð»Ð°Ð¹'@'localhost' (using password: YES)
+2021-07-09 21:27:04,797 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 21:27:04,844 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 21:27:04,844 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> Николай
+2021-07-09 21:27:04,844 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 21:27:11,504 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'liquibaseStarter' defined in file [C:\Users\Николай\IdeaProjects\telecom-project-spring\target\classes\org\project\spring\telecom\infra\db\LiquibaseStarter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/project/spring/telecom/infra/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'Ð�Ð¸ÐºÐ¾Ð»Ð°Ð¹'@'localhost' (using password: YES)
+2021-07-09 21:29:14,396 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 21:29:14,443 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 21:29:14,443 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-09 21:29:14,443 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 21:29:21,792 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-09 21:29:22,276 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-09 21:29:22,448 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-09 21:29:22,448 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-09 21:29:22,448 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-09 21:29:22,729 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-09 21:29:22,729 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-09 21:29:22,745 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-09 21:29:22,745 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-09 21:29:22,745 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-09 21:29:38,408 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-09 22:30:57,855 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-09 22:30:57,957 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-09 22:30:57,958 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-09 22:30:57,958 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-09 22:31:07,611 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-09 22:31:08,315 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-09 22:31:08,586 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-09 22:31:08,588 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-09 22:31:08,588 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-09 22:31:09,251 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-09 22:31:09,252 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-09 22:31:09,254 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-09 22:31:09,255 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-09 22:31:09,260 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-09 22:31:33,600 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-10 10:03:53,428 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-10 10:03:53,498 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-10 10:03:53,498 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-10 10:03:53,498 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-10 10:04:02,030 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-10 10:04:02,515 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-10 10:04:02,749 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-10 10:04:02,749 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-10 10:04:02,749 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-10 10:04:03,061 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-10 10:04:03,061 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-10 10:04:03,093 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-10 10:04:03,093 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-10 10:04:03,093 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-10 10:04:19,027 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-10 10:29:32,909 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2021-07-10 10:29:32,926 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2021-07-10 10:29:32,926 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2021-07-10 10:29:49,195 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'front'
+2021-07-10 10:29:54,136 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-2] Start config DataSource
+2021-07-10 10:29:54,136 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-2] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-10 10:29:54,137 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-2] Set userName --> root
+2021-07-10 10:29:54,137 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-2] Set userPassword --> 380500850614Lucky
+2021-07-10 10:29:55,734 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-2] Start configure server
+2021-07-10 10:29:55,745 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-2] Set context path --> /telecom
+2021-07-10 10:29:55,746 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-2] Add servlet: servlet name --> front
+2021-07-10 10:29:55,747 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-2] Add servlet mapping: url --> /service/*
+2021-07-10 10:29:55,747 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-2] Start configure security
+2021-07-10 10:29:55,749 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-2] Add filter --> AuthorizationFilter
+2021-07-10 10:29:55,749 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-2] Start configure encoding filter
+2021-07-10 10:29:55,750 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-2] Add filter --> EncodingFilter
+2021-07-10 10:29:55,751 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-2] Start configure session listener
+2021-07-10 10:29:55,754 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-2] Set session listeners 
+2021-07-10 10:29:57,825 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 8630 ms
+2021-07-10 10:29:59,967 INFO o.p.s.t.u.UserService [http-nio-8080-exec-2] Try enter user: admin
+2021-07-10 10:30:00,858 INFO o.p.s.t.u.UserService [http-nio-8080-exec-2] User: admin was enter
+2021-07-10 10:30:14,979 WARN o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'login' for method parameter type String is not present]
+2021-07-10 10:32:09,963 WARN o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'page' for method parameter type int is not present]
+2021-07-10 10:33:39,599 WARN o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'rateId' for method parameter type Long is not present]
+2021-07-10 10:33:48,699 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-7] session destroyed
+2021-07-10 10:33:48,790 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-8] Session created
+2021-07-10 10:33:48,791 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-8] Set session locales --> [en, ru]
+2021-07-10 10:33:48,791 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-8] Set session selected locale --> en
+2021-07-10 10:39:24,044 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-10 10:39:24,091 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-10 10:39:24,091 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-10 10:39:24,091 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-10 10:39:30,624 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-10 10:39:31,031 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-10 10:39:31,140 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-10 10:39:31,140 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-10 10:39:31,140 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-10 10:39:31,359 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-10 10:39:31,359 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-10 10:39:31,359 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-10 10:39:31,359 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-10 10:39:31,359 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-10 10:39:44,484 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-10 11:14:21,215 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'front'
+2021-07-10 11:14:22,779 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-1] Start config DataSource
+2021-07-10 11:14:22,780 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-1] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-10 11:14:22,781 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-1] Set userName --> root
+2021-07-10 11:14:22,781 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-1] Set userPassword --> 380500850614Lucky
+2021-07-10 11:14:23,744 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-1] Start configure server
+2021-07-10 11:14:23,750 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Set context path --> /telecom
+2021-07-10 11:14:23,750 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Add servlet: servlet name --> front
+2021-07-10 11:14:23,751 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Add servlet mapping: url --> /service/*
+2021-07-10 11:14:23,751 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-1] Start configure security
+2021-07-10 11:14:23,752 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Add filter --> AuthorizationFilter
+2021-07-10 11:14:23,755 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-1] Start configure encoding filter
+2021-07-10 11:14:23,757 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Add filter --> EncodingFilter
+2021-07-10 11:14:23,757 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-1] Start configure session listener
+2021-07-10 11:14:23,757 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-1] Set session listeners 
+2021-07-10 11:14:25,015 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3800 ms
+2021-07-10 11:14:25,447 INFO o.p.s.t.u.UserService [http-nio-8080-exec-1] Try enter user: admin
+2021-07-10 11:14:25,550 INFO o.p.s.t.u.UserService [http-nio-8080-exec-1] User: admin was enter
+2021-07-10 11:14:25,566 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2021-07-10 11:14:25,568 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2021-07-10 11:14:25,568 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2021-07-10 11:14:54,181 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] session destroyed
+2021-07-10 11:14:54,250 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Session created
+2021-07-10 11:14:54,250 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session locales --> [en, ru]
+2021-07-10 11:14:54,251 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session selected locale --> en
+2021-07-10 11:15:04,309 INFO o.p.s.t.u.UserService [http-nio-8080-exec-6] Try enter user: vasiliy88
+2021-07-10 11:15:04,313 INFO o.p.s.t.u.UserService [http-nio-8080-exec-6] User: vasiliy88 was enter

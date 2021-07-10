@@ -4,10 +4,12 @@ import org.project.spring.telecom.product.Product;
 import org.project.spring.telecom.rate.Rate;
 import org.project.spring.telecom.subscriber.Subscriber;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+@Component
 public class SubscribingRowMapper implements RowMapper<Subscribing> {
 
     @Override

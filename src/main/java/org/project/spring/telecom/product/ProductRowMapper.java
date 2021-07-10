@@ -1,10 +1,12 @@
 package org.project.spring.telecom.product;
 
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+@Component
 public class ProductRowMapper implements RowMapper<Product> {
 
     @Override

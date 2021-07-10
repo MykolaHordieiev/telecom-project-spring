@@ -12,11 +12,12 @@ import java.util.Optional;
 public class UserRepository {
 
     private final JdbcTemplate jdbcTemplate;
+    private final UserResultSetExtractor userResultSetExtractor;
 
     public Optional<User> getUserByLogin(UserLoginDTO userLoginDTO) {
         String query = "SELECT * FROM user WHERE login = ?";
         return jdbcTemplate.query(query,
                 preparedStatement -> preparedStatement.setString(1, userLoginDTO.getLogin()),
-                new UserResultSetExtractor());
+                userResultSetExtractor);
     }
 }

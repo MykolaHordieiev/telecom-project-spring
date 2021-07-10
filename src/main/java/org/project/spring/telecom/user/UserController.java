@@ -28,7 +28,7 @@ public class UserController {
     }
 
     @PostMapping("/change/locale")
-    public RedirectView changeLocale(HttpServletRequest request, RedirectAttributes attributes) {
+    public RedirectView changeLocale(HttpServletRequest request) {
         String selectedLocale = request.getParameter("selectedLocale");
         String view = request.getParameter("view");
         Locale locale = new Locale(selectedLocale);

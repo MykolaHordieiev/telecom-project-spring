@@ -12,6 +12,7 @@ import org.project.spring.telecom.subscriber.SubscriberService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -112,9 +113,10 @@ public class RateController {
     }
 
     @GetMapping("/rate/add")
-    public ModelAndView returnViewAddRates(HttpServletRequest req, ModelMap model) {
-        model.addAttribute("productId", req.getParameter("productId"));
-        return new ModelAndView("/rate/add.jsp");
+    public ModelAndView returnViewAddRates(HttpServletRequest request) {
+        ModelAndView modelAndView = new ModelAndView("/rate/add.jsp");
+        modelAndView.addObject("productId", request.getParameter("productId"));
+        return modelAndView;
     }
 
     @PostMapping("/rate/add")

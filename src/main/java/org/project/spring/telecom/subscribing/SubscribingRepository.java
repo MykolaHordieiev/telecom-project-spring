@@ -17,6 +17,7 @@ public class SubscribingRepository {
     private static Logger logger = LogManager.getLogger(SubscribingRepository.class);
 
     private final JdbcTemplate jdbcTemplate;
+    private final SubscribingRowMapper subscribingRowMapper;
 
     public SubscriberAddSubscribingDTO addSubscribing(SubscriberAddSubscribingDTO subscriberDTO, Long productId, Long rateId) {
         String addSubscribing = "INSERT INTO subscribing VALUES(?,?,?)";
@@ -40,6 +41,6 @@ public class SubscribingRepository {
                 "INNER JOIN subscriber ON subscriber.id = subscribing.subscriber_id " +
                 "INNER JOIN rate ON rate.id = subscribing.rate_id " +
                 "INNER JOIN product on product.id=subscribing.product_id WHERE subscriber_id=" + id;
-        return jdbcTemplate.query(getSubscribing, new SubscribingRowMapper());
+        return jdbcTemplate.query(getSubscribing, subscribingRowMapper);
     }
 }

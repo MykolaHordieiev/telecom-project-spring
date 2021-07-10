@@ -18,16 +18,18 @@ import java.util.*;
 public class SubscriberRepository {
 
     private final JdbcTemplate jdbcTemplate;
+    private final SubscriberRowMapper subscriberRowMapper;
+    private final SubscriberResultSetExtractor subscriberResultSetExtractor;
 
     public Optional<Subscriber> getById(Long id) {
         String query = "SELECT * FROM user JOIN subscriber ON user.id=subscriber.id WHERE user.id=" + id;
-        return jdbcTemplate.query(query, new SubscriberResultSetExtractor());
+        return jdbcTemplate.query(query, subscriberResultSetExtractor);
     }
 
     public Optional<Subscriber> getByLogin(String login) {
         String query = "SELECT user.id, login, balance, locked FROM user JOIN subscriber ON user.id=subscriber.id " +
                 "WHERE user.login='" + login + "'";
-        return jdbcTemplate.query(query, new SubscriberResultSetExtractor());
+        return jdbcTemplate.query(query, subscriberResultSetExtractor);
     }
 
     public SubscriberCreateDTO insertSubscriber(SubscriberCreateDTO subscriberCreateDTO) {
@@ -54,7 +56,7 @@ public class SubscriberRepository {
         String query = "SELECT * FROM user JOIN subscriber ON user.id=subscriber.id LIMIT ?, 5";
         return jdbcTemplate.query(query,
                 preparedStatement -> preparedStatement.setInt(1, index),
-                new SubscriberRowMapper());
+                subscriberRowMapper);
     }
 
     public Double getCountOfRows() {

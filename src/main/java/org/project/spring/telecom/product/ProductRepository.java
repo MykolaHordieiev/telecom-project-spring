@@ -11,14 +11,16 @@ import java.util.Optional;
 public class ProductRepository {
 
     private final JdbcTemplate jdbcTemplate;
+    private final ProductRowMapper productRowMapper;
+    private final ProductResultSetExtractor productResultSetExtractor;
 
     public List<Product> getAllProducts() {
         String getAllProducts = "SELECT * FROM product ORDER BY id";
-        return jdbcTemplate.query(getAllProducts, new ProductRowMapper());
+        return jdbcTemplate.query(getAllProducts, productRowMapper);
     }
 
     public Optional<Product> getProductById(Long id) {
         String query = "SELECT * FROM product WHERE id = " + id;
-        return jdbcTemplate.query(query, new ResultSetExtractorProduct());
+        return jdbcTemplate.query(query, productResultSetExtractor);
     }
 }
