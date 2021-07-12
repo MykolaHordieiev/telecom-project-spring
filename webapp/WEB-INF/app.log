@@ -4477,3 +4477,481 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 2021-07-09 19:43:01,485 INFO o.p.s.t.u.UserService [http-nio-8080-exec-4] User: admin was enter
 2021-07-09 19:43:12,798 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-6] Request: http://localhost:8080/telecom/service/subscriber raised java.lang.RuntimeException
 2021-07-09 20:13:22,032 INFO o.p.s.t.i.w.LocaleSessionListener [ContainerBackgroundProcessor[StandardEngine[Tomcat]]] session destroyed
+2021-07-09 21:39:52,101 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-7] Session created
+2021-07-09 21:39:52,106 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-7] Set session locales --> [en, ru]
+2021-07-09 21:39:52,106 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-7] Set session selected locale --> en
+2021-07-09 22:10:27,379 INFO o.p.s.t.i.w.LocaleSessionListener [ContainerBackgroundProcessor[StandardEngine[Tomcat]]] session destroyed
+2021-07-11 13:40:01,974 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 13:40:01,984 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 13:40:01,984 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 13:40:01,985 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 13:40:05,123 WARN o.s.w.c.s.AnnotationConfigWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'liquibaseStarter' defined in file [C:\Users\slytv\IdeaProjects\telecom-spring\target\classes\org\project\spring\telecom\infra\db\LiquibaseStarter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/project/spring/telecom/infra/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Could not connect to address=(host=localhost)(port=5000)(type=master) : Socket fail to connect to host:localhost, port:5000. Connection refused: connect
+2021-07-11 13:43:24,978 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 13:43:24,993 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 13:43:24,994 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 13:43:24,995 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 13:43:26,022 WARN o.s.w.c.s.AnnotationConfigWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.IllegalStateException: No ServletContext set
+2021-07-11 14:20:39,506 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-11 14:21:41,744 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-11 14:52:13,038 WARN o.s.w.c.s.AnnotationConfigWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [org.project.spring.telecom.Application]; nested exception is java.lang.IllegalArgumentException: @ComponentScan ANNOTATION type filter requires an annotation type: class org.project.spring.telecom.infra.config.WebConfig
+2021-07-11 14:55:42,015 WARN o.s.w.c.s.AnnotationConfigWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [org.project.spring.telecom.Application]; nested exception is java.lang.IllegalArgumentException: @ComponentScan ANNOTATION type filter requires an annotation type: class org.project.spring.telecom.infra.config.WebConfig
+2021-07-11 15:09:51,967 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 15:09:51,982 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:09:51,982 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 15:09:51,983 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 15:09:52,938 WARN o.s.w.c.s.AnnotationConfigWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.IllegalStateException: No ServletContext set
+2021-07-11 15:17:17,833 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 15:17:17,847 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:17:17,847 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 15:17:17,848 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 15:32:09,898 WARN o.s.w.c.s.AnnotationConfigWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.IllegalStateException: No ServletContext set
+2021-07-11 15:33:27,357 WARN o.s.w.c.s.AnnotationConfigWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [org.project.spring.telecom.Application]; nested exception is java.lang.IllegalArgumentException: @ComponentScan ANNOTATION type filter requires an annotation type: class org.project.spring.telecom.infra.config.WebConfig
+2021-07-11 15:34:23,896 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 15:34:23,912 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:34:23,912 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 15:34:23,912 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 15:39:47,266 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 15:39:47,281 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:39:47,281 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 15:39:47,281 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 15:40:49,532 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 15:40:49,547 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:40:49,547 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 15:40:49,547 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 15:41:29,748 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 15:41:29,763 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:41:29,763 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 15:41:29,763 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 15:41:33,778 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-11 15:42:55,173 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 15:42:55,185 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:42:55,186 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 15:42:55,186 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 15:42:57,643 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-11 15:42:57,732 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-11 15:43:01,995 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 15:43:02,355 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Completed initialization in 359 ms
+2021-07-11 15:43:18,252 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 15:43:18,264 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:43:18,264 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 15:43:18,265 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 15:43:21,045 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-11 15:43:21,141 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-11 15:44:43,104 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 15:44:43,117 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:44:43,117 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 15:44:43,118 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 15:44:45,909 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-11 15:44:46,009 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-11 15:45:09,398 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 15:45:09,410 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:45:09,410 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 15:45:09,411 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 15:45:12,080 INFO o.p.s.t.i.d.LiquibaseStarter [main] Update database
+2021-07-11 15:45:12,186 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-11 15:50:22,036 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-11 15:50:27,612 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 15:51:16,448 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-11 15:53:18,161 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-11 15:53:24,068 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 15:53:25,233 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 15:53:25,242 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:53:25,242 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 15:53:25,243 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 15:54:01,412 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-11 15:54:26,935 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 15:54:28,230 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 15:54:28,239 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 15:54:28,239 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 15:54:28,239 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 15:54:45,368 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Completed initialization in 18431 ms
+2021-07-11 15:54:53,336 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-1] No mapping for GET /telecom/
+2021-07-11 15:55:05,734 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-4] No mapping for GET /telecom
+2021-07-11 15:57:19,533 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-11 16:02:35,938 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-11 16:02:35,957 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 16:02:35,957 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-11 16:02:35,957 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> root
+2021-07-11 16:03:33,846 WARN o.s.w.c.s.AnnotationConfigWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.IllegalStateException: No ServletContext set
+2021-07-11 16:40:53,738 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 16:40:56,154 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 16:40:56,174 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 16:40:56,175 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 16:40:56,175 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 16:41:09,103 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext initialized in 15361 ms
+2021-07-11 16:41:09,362 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 16:41:46,585 ERROR o.s.w.s.DispatcherServlet [localhost-startStop-1] Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:671) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530) [spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170) [spring-webmvc-5.3.8.jar:5.3.8]
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1227) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1030) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5037) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5347) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:159) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 28 more
+2021-07-11 16:42:08,001 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcher'
+2021-07-11 16:42:19,753 ERROR o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:671) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530) [spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170) [spring-webmvc-5.3.8.jar:5.3.8]
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1227) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:833) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:159) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 33 more
+2021-07-11 16:42:51,487 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 16:42:53,872 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 16:42:53,895 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 16:42:53,895 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 16:42:53,895 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 16:42:59,311 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext initialized in 7821 ms
+2021-07-11 16:42:59,562 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 16:43:03,578 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Completed initialization in 4016 ms
+2021-07-11 16:43:06,653 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-3] No mapping for GET /telecom/
+2021-07-11 16:45:02,315 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-1] No mapping for GET /telecom/ubscriber/all
+2021-07-11 16:45:06,708 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-5] No mapping for GET /telecom/subscriber/all
+2021-07-11 16:45:15,601 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-6] Request: http://localhost:8080/subscriber/all raised java.lang.NumberFormatException: null
+2021-07-11 16:45:15,652 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-6] No mapping for GET /error/internalerror.jsp
+2021-07-11 16:45:33,100 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-7] Request: http://localhost:8080/subscriber/all raised java.lang.NumberFormatException: null
+2021-07-11 16:45:33,108 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-7] No mapping for GET /error/internalerror.jsp
+2021-07-11 16:45:54,921 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-9] Request: http://localhost:8080/subscriber/all raised java.lang.NumberFormatException: null
+2021-07-11 16:45:54,931 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-9] No mapping for GET /error/internalerror.jsp
+2021-07-11 16:46:30,036 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 16:46:32,368 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 16:46:32,389 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 16:46:32,389 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 16:46:32,390 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 16:46:42,102 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext initialized in 12063 ms
+2021-07-11 16:46:42,352 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 16:47:52,889 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Completed initialization in 70537 ms
+2021-07-11 16:48:09,219 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-3] Request: http://localhost:8080/telecom/subscriber/all raised java.lang.NumberFormatException: null
+2021-07-11 16:48:09,278 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-3] No mapping for GET /telecom/error/internalerror.jsp
+2021-07-11 16:54:50,540 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 16:54:52,847 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 16:54:52,869 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 16:54:52,869 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 16:54:52,869 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 16:55:01,571 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext initialized in 11028 ms
+2021-07-11 16:55:01,825 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 16:57:02,948 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Completed initialization in 121123 ms
+2021-07-11 16:57:11,834 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 16:58:59,377 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 16:59:54,112 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 16:59:54,134 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 16:59:54,135 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 16:59:54,135 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 16:59:59,331 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext initialized in 59951 ms
+2021-07-11 16:59:59,597 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 17:00:46,388 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Completed initialization in 46790 ms
+2021-07-11 17:02:54,703 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 17:02:57,810 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 17:02:57,830 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 17:02:57,831 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 17:02:57,831 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 17:03:12,842 INFO o.p.s.t.i.d.LiquibaseStarter [localhost-startStop-1] Update database
+2021-07-11 17:03:12,852 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext initialized in 18145 ms
+2021-07-11 17:03:13,103 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 17:03:22,257 INFO o.p.s.t.i.d.LiquibaseStarter [localhost-startStop-1] Update database
+2021-07-11 17:03:38,827 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Completed initialization in 25724 ms
+2021-07-11 17:06:57,671 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 17:07:10,974 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 17:07:10,995 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 17:07:10,995 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 17:07:10,996 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 17:07:28,224 INFO o.p.s.t.i.d.LiquibaseStarter [localhost-startStop-1] Update database
+2021-07-11 17:07:28,235 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext initialized in 30560 ms
+2021-07-11 17:07:28,497 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 17:07:42,763 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Completed initialization in 14264 ms
+2021-07-11 17:08:23,170 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 17:08:38,122 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 17:08:38,145 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 17:08:38,146 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 17:08:38,146 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 17:08:59,462 INFO o.p.s.t.i.d.LiquibaseStarter [localhost-startStop-1] Update database
+2021-07-11 17:08:59,472 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext initialized in 36299 ms
+2021-07-11 17:08:59,732 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 17:09:56,212 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Completed initialization in 56480 ms
+2021-07-11 18:07:08,099 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 18:07:12,794 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 18:07:12,816 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 18:07:12,817 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 18:07:12,817 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 18:07:27,519 INFO o.p.s.t.i.d.LiquibaseStarter [localhost-startStop-1] Update database
+2021-07-11 18:07:27,530 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext initialized in 19427 ms
+2021-07-11 18:07:27,793 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 18:07:37,981 ERROR o.s.w.s.DispatcherServlet [localhost-startStop-1] Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:671) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530) [spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170) [spring-webmvc-5.3.8.jar:5.3.8]
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1227) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1030) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5037) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5347) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:159) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 28 more
+2021-07-11 18:07:41,846 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcher'
+2021-07-11 18:07:46,290 ERROR o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:671) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530) [spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170) [spring-webmvc-5.3.8.jar:5.3.8]
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1227) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:833) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:159) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 33 more
+2021-07-11 18:07:55,059 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-4] Initializing Servlet 'dispatcher'
+2021-07-11 18:08:28,929 ERROR o.s.w.s.DispatcherServlet [http-nio-8080-exec-4] Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:671) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530) [spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170) [spring-webmvc-5.3.8.jar:5.3.8]
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1227) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:833) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:159) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 33 more
+2021-07-11 18:08:34,336 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-3] Initializing Servlet 'dispatcher'
+2021-07-11 18:11:19,413 ERROR o.s.w.s.DispatcherServlet [http-nio-8080-exec-3] Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:671) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530) [spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170) [spring-webmvc-5.3.8.jar:5.3.8]
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1227) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:833) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:159) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 33 more
+2021-07-11 18:11:26,469 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-5] Initializing Servlet 'dispatcher'
+2021-07-11 18:13:42,467 ERROR o.s.w.s.DispatcherServlet [http-nio-8080-exec-5] Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:671) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530) [spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170) [spring-webmvc-5.3.8.jar:5.3.8]
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1227) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:833) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.0.48.jar:8.0.48]
+	at java.base/java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:159) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 33 more
+2021-07-11 18:13:59,490 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 18:14:07,009 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 18:14:07,029 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 18:14:07,029 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 18:14:07,029 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 18:14:40,830 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-11 18:14:45,347 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-11 18:14:45,367 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mariadb://localhost:5000/telecom?createDatabaseIfNotExist=true
+2021-07-11 18:14:45,368 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-11 18:14:45,368 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> root
+2021-07-11 18:15:45,910 INFO o.p.s.t.i.d.LiquibaseStarter [localhost-startStop-1] Update database
+2021-07-11 18:15:45,920 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext initialized in 65087 ms
+2021-07-11 18:15:46,212 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-11 18:15:59,027 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Completed initialization in 12815 ms
+2021-07-11 18:16:01,381 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-1] Request: http://localhost:8080/telecom/subscriber/all raised java.lang.NumberFormatException: null
+2021-07-11 18:16:01,454 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-1] No mapping for GET /telecom/error/internalerror.jsp
+2021-07-12 15:00:24,892 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-5] Request: http://localhost:8080/telecom/subscriber/all raised java.lang.NumberFormatException: null
+2021-07-12 15:00:24,896 ERROR o.p.s.t.i.w.ExceptionHandlerMy [http-nio-8080-exec-4] Request: http://localhost:8080/telecom/subscriber/all raised java.lang.NumberFormatException: null
+2021-07-12 15:00:24,899 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-5] No mapping for GET /telecom/error/internalerror.jsp
+2021-07-12 15:00:24,904 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-4] No mapping for GET /telecom/error/internalerror.jsp
