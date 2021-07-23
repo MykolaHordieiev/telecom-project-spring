@@ -15,10 +15,6 @@ public class Application {
         ApplicationContext applicationContext =
                 new AnnotationConfigApplicationContext(Application.class);
 
-        //database
-        LiquibaseStarter liquibaseStarter = applicationContext.getBean(LiquibaseStarter.class);
-        liquibaseStarter.updateDatabase();
-
         //web
         ServerStarter serverStarter = applicationContext.getBean(ServerStarter.class);
         serverStarter.startServer();

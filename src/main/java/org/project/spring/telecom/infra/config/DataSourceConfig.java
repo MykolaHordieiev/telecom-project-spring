@@ -27,7 +27,6 @@ public class DataSourceConfig {
                                  @Value("${mysql.userpassword}") String userPassword) {
 
         log.info("Start config DataSource");
-
         HikariConfig hikariConfig = new HikariConfig();
 
         hikariConfig.setJdbcUrl(url);
