@@ -2,8 +2,6 @@ services:
   mariaDB:
     image: mariadb
     restart: always
-    container_name: telecom-maria-db
-    hostname: mariaserver
     ports:
       - 5000:3306
     environment:
