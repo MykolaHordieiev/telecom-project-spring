@@ -4193,3 +4193,162 @@ Offending resource: org.project.spring.telecom.user.ConfigUserController
 2021-07-10 11:14:54,251 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session selected locale --> en
 2021-07-10 11:15:04,309 INFO o.p.s.t.u.UserService [http-nio-8080-exec-6] Try enter user: vasiliy88
 2021-07-10 11:15:04,313 INFO o.p.s.t.u.UserService [http-nio-8080-exec-6] User: vasiliy88 was enter
+2021-07-28 17:30:29,726 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-28 17:30:29,763 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-28 17:30:29,763 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-28 17:30:29,763 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-28 17:30:38,363 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-28 17:30:39,058 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-28 17:30:39,188 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-28 17:30:39,189 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-28 17:30:39,189 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-28 17:30:41,629 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-28 17:30:41,629 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-28 17:30:41,632 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-28 17:30:41,632 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-28 17:30:41,636 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-28 17:30:43,282 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.IllegalStateException: No ServletContext set
+2021-07-28 17:33:31,590 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-28 17:33:31,628 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-28 17:33:31,628 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-28 17:33:31,628 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-28 17:33:48,354 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-28 17:33:49,813 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-28 17:33:50,464 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-28 17:33:50,465 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-28 17:33:50,465 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-28 17:33:52,094 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-28 17:33:52,094 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-28 17:33:52,096 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-28 17:33:52,097 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-28 17:33:52,101 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-28 17:37:10,317 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2021-07-28 17:37:10,319 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2021-07-28 17:37:10,319 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2021-07-28 17:37:58,362 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-7] Initializing Servlet 'front'
+2021-07-28 17:38:01,804 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-7] Start config DataSource
+2021-07-28 17:38:01,806 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-7] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-28 17:38:01,807 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-7] Set userName --> root
+2021-07-28 17:38:01,807 INFO o.p.s.t.i.c.DataSourceConfig [http-nio-8080-exec-7] Set userPassword --> 380500850614Lucky
+2021-07-28 17:38:03,410 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-7] Start configure server
+2021-07-28 17:38:03,414 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Set context path --> /telecom
+2021-07-28 17:38:03,415 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Add servlet: servlet name --> front
+2021-07-28 17:38:03,416 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Add servlet mapping: url --> /service/*
+2021-07-28 17:38:03,416 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-7] Start configure security
+2021-07-28 17:38:03,417 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Add filter --> AuthorizationFilter
+2021-07-28 17:38:03,418 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-7] Start configure encoding filter
+2021-07-28 17:38:03,419 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Add filter --> EncodingFilter
+2021-07-28 17:38:03,420 INFO o.p.s.t.i.c.ServerStarterConfig [http-nio-8080-exec-7] Start configure session listener
+2021-07-28 17:38:03,420 INFO o.p.s.t.i.w.ServerStarter [http-nio-8080-exec-7] Set session listeners 
+2021-07-28 17:38:13,235 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-7] Completed initialization in 14872 ms
+2021-07-28 17:38:13,556 INFO o.p.s.t.u.UserService [http-nio-8080-exec-7] Try enter user: admin
+2021-07-28 17:38:18,473 INFO o.p.s.t.u.UserService [http-nio-8080-exec-7] User: admin was enter
+2021-07-28 17:38:37,416 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] session destroyed
+2021-07-28 17:38:37,555 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2021-07-28 17:38:37,555 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2021-07-28 17:38:37,556 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2021-07-28 18:02:00,703 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-28 18:02:00,807 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-28 18:02:00,807 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-28 18:02:00,807 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-28 18:02:11,122 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-28 18:02:11,852 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-28 18:02:11,873 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-28 18:02:11,874 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-28 18:02:11,874 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-28 18:02:12,422 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-28 18:02:12,423 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-28 18:02:12,425 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-28 18:02:12,425 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-28 18:02:12,429 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-28 18:02:14,034 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.IllegalStateException: No ServletContext set
+2021-07-28 18:35:06,416 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-28 18:35:06,477 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-28 18:35:06,478 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-28 18:35:06,479 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-28 18:35:19,204 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-28 18:35:19,665 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-28 18:35:19,684 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-28 18:35:19,685 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-28 18:35:19,685 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-28 18:35:20,053 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-28 18:35:20,054 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-28 18:35:20,062 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-28 18:35:20,065 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-28 18:35:20,070 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-28 18:35:22,639 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.IllegalStateException: No ServletContext set
+2021-07-28 18:47:49,378 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-28 18:47:49,435 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-28 18:47:49,436 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-28 18:47:49,436 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-28 18:47:55,878 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-28 18:47:56,296 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-28 18:47:56,312 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-28 18:47:56,313 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-28 18:47:56,313 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-28 18:47:56,795 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-28 18:47:56,795 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-28 18:47:56,798 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-28 18:47:56,798 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-28 18:47:56,802 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-28 18:47:57,758 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.IllegalStateException: No ServletContext set
+2021-07-28 19:06:12,458 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverStarterConfig' defined in file [C:\Users\Николай\IdeaProjects\telecom-project-spring\target\classes\org\project\spring\telecom\infra\config\ServerStarterConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.servlet.DispatcherServlet' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-07-28 19:08:00,475 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-28 19:08:00,507 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-28 19:08:00,508 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-28 19:08:00,508 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-28 19:08:18,715 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.IllegalStateException: No ServletContext set
+2021-07-28 19:14:55,900 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverStarterConfig' defined in file [C:\Users\Николай\IdeaProjects\telecom-project-spring\target\classes\org\project\spring\telecom\infra\config\ServerStarterConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.servlet.DispatcherServlet' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-07-28 19:16:05,677 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-28 19:16:05,733 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-28 19:16:05,734 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-28 19:16:05,734 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-28 19:16:10,954 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-28 19:16:11,336 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-28 19:16:11,414 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet: servlet name --> front
+2021-07-28 19:16:11,415 INFO o.p.s.t.i.w.ServerStarter [main] Add servlet mapping: url --> /service/*
+2021-07-28 19:16:11,416 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-28 19:16:11,697 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-28 19:16:11,697 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-28 19:16:11,700 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-28 19:16:11,700 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-28 19:16:11,705 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-28 19:16:21,866 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.IllegalStateException: No ServletContext set
+2021-07-28 19:16:48,281 INFO o.p.s.t.i.c.DataSourceConfig [main] Start config DataSource
+2021-07-28 19:16:48,312 INFO o.p.s.t.i.c.DataSourceConfig [main] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-28 19:16:48,313 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userName --> root
+2021-07-28 19:16:48,314 INFO o.p.s.t.i.c.DataSourceConfig [main] Set userPassword --> 380500850614Lucky
+2021-07-28 19:16:52,429 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure server
+2021-07-28 19:16:52,664 INFO o.p.s.t.i.w.ServerStarter [main] Set context path --> /telecom
+2021-07-28 19:16:52,665 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure security
+2021-07-28 19:16:52,817 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> AuthorizationFilter
+2021-07-28 19:16:52,817 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure encoding filter
+2021-07-28 19:16:52,820 INFO o.p.s.t.i.w.ServerStarter [main] Add filter --> EncodingFilter
+2021-07-28 19:16:52,820 INFO o.p.s.t.i.c.ServerStarterConfig [main] Start configure session listener
+2021-07-28 19:16:52,824 INFO o.p.s.t.i.w.ServerStarter [main] Set session listeners 
+2021-07-28 19:17:02,229 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.IllegalStateException: No ServletContext set
+2021-07-29 11:13:29,248 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization started
+2021-07-29 11:13:32,063 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Start config DataSource
+2021-07-29 11:13:32,079 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set JdbcUrl --> jdbc:mysql://localhost:3306/spring_telecom?createDatabaseIfNotExist=true
+2021-07-29 11:13:32,079 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userName --> root
+2021-07-29 11:13:32,095 INFO o.p.s.t.i.c.DataSourceConfig [localhost-startStop-1] Set userPassword --> 380500850614Lucky
+2021-07-29 11:13:39,766 INFO o.p.s.t.i.c.ServerStarterConfig [localhost-startStop-1] Start configure server
+2021-07-29 11:13:39,766 INFO o.p.s.t.i.w.ServerStarter [localhost-startStop-1] Set context path --> /telecom
+2021-07-29 11:13:39,766 INFO o.p.s.t.i.c.ServerStarterConfig [localhost-startStop-1] Start configure security
+2021-07-29 11:13:39,766 INFO o.p.s.t.i.w.ServerStarter [localhost-startStop-1] Add filter --> AuthorizationFilter
+2021-07-29 11:13:39,782 INFO o.p.s.t.i.c.ServerStarterConfig [localhost-startStop-1] Start configure encoding filter
+2021-07-29 11:13:39,782 INFO o.p.s.t.i.w.ServerStarter [localhost-startStop-1] Add filter --> EncodingFilter
+2021-07-29 11:13:39,782 INFO o.p.s.t.i.c.ServerStarterConfig [localhost-startStop-1] Start configure session listener
+2021-07-29 11:13:39,782 INFO o.p.s.t.i.w.ServerStarter [localhost-startStop-1] Set session listeners 
+2021-07-29 11:13:52,968 INFO o.s.w.c.ContextLoader [localhost-startStop-1] Root WebApplicationContext initialized in 23705 ms
+2021-07-29 11:13:53,000 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Initializing Servlet 'dispatcher'
+2021-07-29 11:13:53,031 INFO o.s.w.s.DispatcherServlet [localhost-startStop-1] Completed initialization in 31 ms
+2021-07-29 11:16:49,420 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2021-07-29 11:16:49,423 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2021-07-29 11:16:49,423 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2021-07-29 11:17:10,248 INFO o.p.s.t.u.UserService [http-nio-8080-exec-6] Try enter user: admin
+2021-07-29 11:17:12,688 INFO o.p.s.t.u.UserService [http-nio-8080-exec-6] User: admin was enter
+2021-07-29 11:18:36,810 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-10] session destroyed
+2021-07-29 11:18:36,831 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2021-07-29 11:18:36,831 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2021-07-29 11:18:36,832 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en

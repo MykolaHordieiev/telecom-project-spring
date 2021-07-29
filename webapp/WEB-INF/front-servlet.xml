@@ -11,8 +11,6 @@
 
     <bean id = "viewResolver"
           class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
-
-
     </bean>
 
 </beans>
