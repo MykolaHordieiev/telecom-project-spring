@@ -1,6 +1,7 @@
 package org.project.spring.telecom.infra.web;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,9 +12,8 @@ import java.util.List;
 import java.util.Locale;
 
 @RequiredArgsConstructor
+@Log4j2
 public class LocaleSessionListener implements HttpSessionListener {
-
-    private static Logger logger = LogManager.getLogger(LocaleSessionListener.class);
 
     private final List<Locale> locales;
     private final Locale selectedLocale;
@@ -21,17 +21,17 @@ public class LocaleSessionListener implements HttpSessionListener {
     @Override
     public void sessionCreated(HttpSessionEvent httpSessionEvent) {
         HttpSession session = httpSessionEvent.getSession();
-        logger.info("Session created");
+        log.info("Session created");
 
         session.setAttribute("locales", locales);
-        logger.info("Set session locales --> " + locales);
+        log.info("Set session locales --> " + locales);
 
         session.setAttribute("selectedLocale", selectedLocale);
-        logger.info("Set session selected locale --> " + selectedLocale);
+        log.info("Set session selected locale --> " + selectedLocale);
     }
 
     @Override
     public void sessionDestroyed(HttpSessionEvent httpSessionEvent) {
-        logger.info("session destroyed");
+        log.info("session destroyed");
     }
 }
