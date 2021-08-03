@@ -147,7 +147,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.test.project.Application</mainClass>
+                            <mainClass>org.project.spring.telecom.Application</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

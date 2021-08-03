@@ -1,6 +1,7 @@
 package org.project.spring.telecom.subscriber;
 
 import lombok.RequiredArgsConstructor;
+import org.project.spring.telecom.infra.annotation.Timed;
 import org.project.spring.telecom.subscriber.dto.SubscriberCreateDTO;
 import org.project.spring.telecom.subscriber.dto.SubscriberReplenishDTO;
 import org.springframework.stereotype.Component;
@@ -28,6 +29,7 @@ public class SubscriberService {
                 + id + " doesn't exist"));
     }
 
+    @Timed
     public List<Subscriber> getAll(int page) {
         int index = (page - 1) * 5;
         return subscriberRepository.getAll(index);

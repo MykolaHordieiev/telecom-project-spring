@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.project.spring.telecom.infra.annotation.Timed;
 import org.project.spring.telecom.user.dto.UserLoginDTO;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,7 @@ public class UserService {
 
     private final UserRepository userRepository;
 
+    @Timed
     public User loginUser(UserLoginDTO userLoginDTO) {
         log.info("Try enter user: " + userLoginDTO.getLogin());
 

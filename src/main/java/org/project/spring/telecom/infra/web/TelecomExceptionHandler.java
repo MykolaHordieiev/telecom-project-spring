@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 
 @ControllerAdvice
 @Log4j2
-public class ExceptionHandlerMy {
+public class TelecomExceptionHandler {
 
     @ExceptionHandler(TelecomException.class)
-    public ModelAndView handleTelecomeException(HttpServletRequest request, Exception ex) {
+    public ModelAndView handleTelecomException(HttpServletRequest request, Exception ex) {
         log.error("Request: " + request.getRequestURL() + " raised " + ex);
 
         ModelAndView modelAndView = new ModelAndView();

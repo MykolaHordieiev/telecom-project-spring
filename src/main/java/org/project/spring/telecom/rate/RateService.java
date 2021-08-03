@@ -2,6 +2,7 @@ package org.project.spring.telecom.rate;
 
 import lombok.RequiredArgsConstructor;
 
+import org.project.spring.telecom.infra.annotation.Timed;
 import org.project.spring.telecom.rate.dto.RateAddRequestDTO;
 import org.project.spring.telecom.rate.dto.RateChangeRequestDTO;
 import org.project.spring.telecom.subscriber.Subscriber;
@@ -16,6 +17,7 @@ public class RateService {
 
     private final RateRepository rateRepository;
 
+    @Timed
     public List<Rate> getRatesByProductId(Long productId) {
         return rateRepository.getRatesByProduct(productId);
     }
